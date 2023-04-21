@@ -1,0 +1,17 @@
+.LogoNav{
+    width: 90px;
+    padding: 2px;
+    display: flex;
+}
+
+.Nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.BotonesNav{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
