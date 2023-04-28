@@ -11,24 +11,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
         <img src="./multimedia/LogoSinNombre.png" alt="Logo" class="LogoNav">
         <div class="divPruebaBotones">
-            <h3 class="BotonesNav" href="">Acerca de nosotros</h3>
-            <h3 class="BotonesNav" href="">Productos</h3>
-            <h3 class="BotonesNav" href="">Contacto</h3>
+            <a class="BotonesNav" href="">Acerca de nosotros</a>
+            <a class="BotonesNav" href="">Productos</a>
+            <a class="BotonesNav" href="">Contacto</a>
+            
         </div>
     </header>
 
-    <div class="slider">
-        <ul>
-            <li><img src="./multimedia/IMAGEN.png" alt=""></li>
-            <li><img src="./multimedia/IMAGEN.png" alt=""></li>
-            <li><img src="./multimedia/IMAGEN.png" alt=""></li>
-            <li><img src="./multimedia/IMAGEN.png" alt=""></li>
-        </ul>
-    </div>
+    
 
+    <div class="contenedorSlider">
+        <div class="slider" id="slider">
+            <div class="slider--section">
+                <img class="slider--img" src="./multimedia/IMAGEN.png" alt="">
+            </div>
+            <div class="slider--section">
+                <img class="slider--img" src="./multimedia/IMAGEN.png" alt="">
+            </div>
+            <div class="slider--section">
+                <img class="slider--img" src="./multimedia/IMAGEN.png" alt="">
+            </div>
+            <div class="slider--section">
+                <img class="slider--img" src="./multimedia/IMAGEN.png" alt="">
+            </div>
+            <div class="slider--section">
+                <img class="slider--img" src="./multimedia/IMAGEN.png" alt="">
+            </div>
+        </div>
+        <div class="slider--btn slider--btn--right" id="btn-right">&#62</div>
+        <div class="slider--btn slider--btn--left" id="btn-left" >&#60</div>
+    </div>
+    <script src="slider.js"></script>
 
     <section class="contenedorProductos">
         <div class="Productos">
@@ -53,7 +70,8 @@
         </div>
     </section>
 
-
+    
+    
 
 </body>
 </html>
