@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+
+}
+
+header{
+
+    display: flex;
+    background-color: navy; 
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.logoprueba1{
+    width: 150px;
+    border-radius: 100%;
+
+}
+
+.titulo{
+    padding-bottom: 100px;
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column; 
+    align-content: center;
+
+}
+
+.botones{
+    display: flex;
+    padding: 30px;
+    font-size: 24px;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    text-decoration: none
+    
+}
+
+.content{
+    width: 45px;
+    padding: 5% 5%;
+    font-family: 'Jost', sans-serif;
+
+}
+
+.productos_contenedor{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    right: 1%;
+    top: 5%;
+    bottom: 5%;
+
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.texto_productos{
+    width: 25px;
+}
+
+.imagenes_productos{
+    width: 200px;
+}
+
+
+
+
