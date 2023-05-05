@@ -9,17 +9,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,0" />
+
 </head>
 <body>
 
     <header>
-        <img src="./multimedia/LogoSinNombre.png" alt="Logo" class="LogoNav">
-        <div class="divPruebaBotones">
-            <a class="BotonesNav" href="">Acerca de nosotros</a>
-            <a class="BotonesNav" href="">Productos</a>
-            <a class="BotonesNav" href="">Contacto</a>
-            
+        <div class="nav">
+            <img src="./multimedia/LogoSinNombre.png" alt="Logo" class="LogoNav">
+            <div class="divPruebaBotones">
+                <a class="BotonesNav" href="">Acerca de nosotros</a>
+                <a class="BotonesNav" href="">Productos</a>
+                <a class="BotonesNav" href="">Contacto</a>
+            </div>
+
+            <div class="usuario-carrito">
+                <input type="checkbox" id="btn-menu">
+                <label for="btn-menu"><span class="material-symbols-outlined">menu</span></label>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="./carrito.html"><span class="material-symbols-outlined">shopping_cart</span></a></li>
+                        <li><a href="./usuario.html"><span class="material-symbols-outlined">account_circle</span></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+
+        
     </header>
 
     
@@ -45,7 +63,11 @@
         <div class="slider--btn slider--btn--right" id="btn-right">&#62</div>
         <div class="slider--btn slider--btn--left" id="btn-left" >&#60</div>
     </div>
-    <script src="slider.js"></script>
+    <script src="slider.js">
+
+    </script>
+
+
 
     <section class="contenedorProductos">
         <div class="Productos">

@@ -6,6 +6,7 @@
 
 body{
     height: 2000px;
+    min-height: 100vh;
 }
 
 header{
@@ -15,6 +16,87 @@ header{
     background-color: #1d5c63;
     position: fixed;
     z-index: 1000;
+
+
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+    
+}
+
+#btn-menu {
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.menu li:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+.menu li a {
+    display: block;
+    padding: 5px 5px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+@media (max-width:768px){
+    header lebel{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background: #1d5c63;
+        width: 20%;
+        margin-left: -70%;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li {
+        border-top: 1px solid #fff;
+    }
+
+    #btn.menu:checked {
+        
+    }
+}
+
+
+
+
+.material-symbols-outlined{
+    color: white;
 }
 
 .LogoNav{
@@ -22,14 +104,13 @@ header{
     padding: 5px;
     display: flex;
     border-radius: 100%;
+
 }
 
 .divPruebaBotones {
     display: flex;
     flex-direction: row;
-    padding: 5px 25px 5px 5px;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
     color: #ede6db;
     font-family: 'Jost', sans-serif;;
     cursor: pointer;
@@ -48,17 +129,19 @@ header{
 
 
 .contenedorSlider{
-    width: 90%;
-    min-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     margin: auto;
     overflow: hidden;
     z-index: 900;
+    position: relative;
 }
 
 .slider{
     display: flex;
     width: 400%;
     height: 400%;
+    margin-left: -100%;
 }
 
 .slider--section{
@@ -67,7 +150,7 @@ header{
 
 .slider--img{
     display: block;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     object-fit: cover;
 }
@@ -76,7 +159,7 @@ header{
     position: absolute;
     width: 40px;
     height: 40px;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.2);
     top: 50%;
     transform: translateY(-50%);
     font-size: 30px;
@@ -93,7 +176,6 @@ header{
 
 .slider--btn--left{
     left: 10px;
-    top: 100px;
 }
 
 .slider--btn--right{
@@ -104,13 +186,12 @@ header{
 
 
 
-
 .contenedorProductos{
     padding: 20px 0px 0px 0px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    box-shadow: 0px 10px 20px black;
+
 }
 
 .Productos img{
