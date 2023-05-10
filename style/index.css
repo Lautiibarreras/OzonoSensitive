@@ -28,6 +28,10 @@ header{
     
 }
 
+
+
+
+
 #btn-menu {
     display: none;
 }
@@ -37,7 +41,8 @@ header label{
     width: 30px;
     height: 30px;
     padding: 10px;
-    border-right: 1px solid #fff;
+    
+
 }
 
 header label:hover {
@@ -50,7 +55,6 @@ header label:hover {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: flex-end;
 
 }
 
@@ -68,7 +72,8 @@ header label:hover {
 }
 
 @media (max-width:768px){
-    header lebel{
+
+    header label {
         display: block;
     }
 
@@ -76,7 +81,8 @@ header label:hover {
         position: absolute;
         background: #1d5c63;
         width: 20%;
-        margin-left: -70%;
+        margin-right: -20%;
+        transition: 0.5s;
     }
 
     .menu ul{
@@ -84,14 +90,21 @@ header label:hover {
     }
 
     .menu li {
-        border-top: 1px solid #fff;
+        box-shadow: 1px -28px 31px -40px rgba(255,255,255,1) inset;
+        -webkit-box-shadow: 1px -28px 31px -40px rgba(255,255,255,1) inset;
+        -moz-box-shadow: 1px -28px 31px -40px rgba(255,255,255,1) inset;
     }
 
-    #btn.menu:checked {
-        
+    #btn.menu:checked ~ .menu{
+        margin: 0;
+    }
+
+    #ham-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
-
 
 
 
