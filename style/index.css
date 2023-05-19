@@ -48,6 +48,7 @@ header label{
 header label:hover {
     cursor: pointer;
     background: rgba(0, 0, 0, 0.3);
+
 }
 
 .menu ul {
@@ -60,6 +61,7 @@ header label:hover {
 
 .menu li:hover {
     background: rgba(0, 0, 0, 0.3);
+    border-radius: 20%;
 }
 
 
