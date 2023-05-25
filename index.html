@@ -17,27 +17,21 @@
 <body>
 
     <header>
-        <div class="nav">
-            <img src="./multimedia/LogoSinNombre.png" alt="Logo" class="LogoNav">
-            <div class="divPruebaBotones">
-                <a class="BotonesNav" href="">Acerca de nosotros</a>
-                <a class="BotonesNav" href="">Productos</a>
-                <a class="BotonesNav" href="">Contacto</a>
-            </div>
-
-            <!-- <div class="botones-desplegables"> -->
-            <input type="checkbox" id="btn-menu">
-            <label id="ham-menu" for="btn-menu"><span class="material-symbols-outlined">menu</span></label>
-            <nav class="menu">
-                <ul>
-                    <li><a href="./carrito.html"><span class="material-symbols-outlined">shopping_cart</span></a></li>
-                    <li><a href="./usuario.html"><span class="material-symbols-outlined">account_circle</span></a></li>
-                </ul>
-            </nav>
-                <!-- </div> -->
-            </div>
-
-        
+        <img src="./multimedia/LogoSinNombre.png" alt="Logo" class="LogoNav">
+        <input type="checkbox" id="btn-menu">
+        <label id="ham-menu" for="btn-menu"><span class="material-symbols-outlined">menu</span></label>
+        <nav class="menu" id="conteiner">
+            <ul class="BotonesNav">
+                <li><a href="">Acerca de nosotros</a></li>
+                <li><a href="">Productos</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+            <ul class="carrito-usuario">
+                <li><a href="./carrito.html"><span class="material-symbols-outlined">shopping_cart</span></a></li>
+                <li><a href="./usuario.html"><span class="material-symbols-outlined">account_circle</span></a></li>
+            </ul>
+        </nav>
+    
     </header>
 
     

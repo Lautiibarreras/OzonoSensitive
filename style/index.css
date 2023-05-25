@@ -12,24 +12,36 @@ body{
 header{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    min-width: 100%;
     background-color: #1d5c63;
     position: fixed;
-    z-index: 1000;
-
-
-}
-
-.nav{
-    display: flex;
+    z-index: 1000;    
     align-items: center;
-    justify-content: space-between;
-    min-width: 100%;
-    
+    justify-content: center;
+    border: 1px solid black; 
+}
+
+.LogoNav{    
+    display: flex;
+    width: 60px;
+    padding: 5px;
+    border-radius: 100%;
+    border: 1px solid black;
 }
 
 
+.BotonesNav{
+    display: flex;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;;
+    color: #ede6db;
+    border: 1px solid black;
+}
 
+
+.carrito-usuario{
+    border: 1px solid black;
+}
 
 
 #btn-menu {
@@ -40,15 +52,17 @@ header label{
     display: none;
     width: 30px;
     height: 30px;
-    padding: 10px;
-    
-
+    padding: 10px;   
 }
 
 header label:hover {
     cursor: pointer;
     background: rgba(0, 0, 0, 0.3);
 
+}
+
+.menu{
+    display: flex;
 }
 
 .menu ul {
@@ -62,8 +76,8 @@ header label:hover {
 .menu li:hover {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 20%;
-}
 
+}
 
 .menu li a {
     display: block;
@@ -108,35 +122,8 @@ header label:hover {
     }
 }
 
-
-
 .material-symbols-outlined{
     color: white;
-}
-
-.LogoNav{
-    width: 60px;
-    padding: 5px;
-    display: flex;
-    border-radius: 100%;
-
-}
-
-.divPruebaBotones {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: #ede6db;
-    font-family: 'Jost', sans-serif;;
-    cursor: pointer;
-}
-
-.BotonesNav{
-    display: flex;
-    margin: 10px;
-    text-decoration: none;
-    font-family: 'Jost', sans-serif;;
-    color: #ede6db;
 }
 
 
@@ -211,7 +198,6 @@ header label:hover {
 
 .Productos img{
     width: 100%;
-
 }
 
 .Productos:hover{
